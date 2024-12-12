@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    background: #f7f7f7 url('imagens/fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+#principal {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Imagem de capa */
+.img-capa {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Menu de navegação */
+#menu {
+    background: #4b566a;
+    padding: 15px;
+    text-align: center;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s, background 0.3s;
+}
+
+#menu a:hover {
+    color: #ff5722;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+#conteudo {
+    padding: 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+h1 {
+    color: #4b566a;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Imagens da campanha */
+.img-campanha {
+    width: 100%;
+    margin: 20px 0;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+/* Rodapé */
+#rodape {
+    background: #4b566a;
+    color: #fff;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 15px 0;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do rodapé */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 50px; /* Define uma altura consistente para o rodapé */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+}
